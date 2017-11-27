@@ -18,23 +18,29 @@
 #include <cmath>
 using namespace std;
 
-void simpleMultipliers(int);
+void simpleMultipliers_v1(int);
 
-void simpleMultipliers2(int);
+void simpleMultipliers_v2(int);
 
 int main(int argc, const char * argv[])
 {
+    cout<<"Algorithm with O(N) complexity:"<<endl;
+    simpleMultipliers_v1(10);
     
-    simpleMultipliers(100);
+    cout<<"Algorithm with O(sqrt(N)) complexity:"<<endl;
+    simpleMultipliers_v2(10);
     
     
     return 0;
 }
-void simpleMultipliers2(int N)
+
+//Algorithm with O(N) comlexity
+void simpleMultipliers_v1(int N)
 {
     for (int z=1;z<=N;z++)
     {
     int k =z;
+    cout<<k<<": ";
     int i = 2;
     while(i<k)
     {
@@ -53,7 +59,8 @@ void simpleMultipliers2(int N)
 }
 
 
-void simpleMultipliers(int N)
+//Algorithm with O(sqrt(N)) comlexity - best solution
+void simpleMultipliers_v2(int N)
 {
 for(int i = 1;i<=N;i++)
 {
