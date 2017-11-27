@@ -55,7 +55,7 @@ int main(int argc, const char * argv[]) {
     
     int end = N - (rest-rest/2);
     
-    cout<<"\nIdexes of divided parts:"<<endl;
+    cout<<"\nIndexes of divided parts:"<<endl;
     for (int i = start;i<end;i+=temp)
     {
         cout<< i << ':' << i+(temp-1)<<endl;
